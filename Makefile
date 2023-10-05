@@ -1,9 +1,8 @@
-# list/Makefile
-#
-# Makefile for list implementation and test file.
-#
-# Guthrie, Lauren
 
+all: signalab timer
 
-list: main.c list.c list.h
-	gcc -o list main.c list.c list.h
+signals: signal.c
+	gcc signal.c -o signalab 
+
+timer: timer.c
+	gcc timer.c -o timer 
